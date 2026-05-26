@@ -112,73 +112,82 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
   <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Investigating Confidence Intervals for Effect Sizes in One-Way ANOVA: A Comprehensive Analysis of Eta Squared, Omega Squared, and Epsilon Squared",
+  "description": "Monte Carlo simulation study evaluating noncentral F, percentile bootstrap, and BCa confidence intervals for eta squared, omega squared, and epsilon squared in one-way fixed-effect ANOVA under varying effect sizes, sample sizes, and outcome distributions.",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Kasuni Abeykoonge",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Psychology, University of Manitoba"
       }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+    {
+      "@type": "Person",
+      "name": "Johnson Li",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Psychology, University of Manitoba"
       }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
+    }
+  ],
+  "datePublished": "2026-01-01",
+  "publisher": {
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+    "name": "Department of Psychology, University of Manitoba"
+  },
+  "url": "https://maheeshiabeykoon.github.io/Investigating-Confidence-Intervals-for-Effect-Sizes-in-ANOVA/",
+  "image": "https://maheeshiabeykoon.github.io/Investigating-Confidence-Intervals-for-Effect-Sizes-in-ANOVA/static/images/social_preview.png",
+  "keywords": [
+    "ANOVA",
+    "confidence intervals",
+    "effect sizes",
+    "eta squared",
+    "omega squared",
+    "epsilon squared",
+    "Monte Carlo simulation",
+    "fixed-effect ANOVA"
+  ],
+  "abstract": "Use of effect sizes and their confidence intervals (CIs) has received increasing attention in applied research, yet the performance of CI methods for effect sizes in designs involving a one-way fixed-effect analysis of variance (OF-ANOVA) remains insufficiently understood. This study evaluates CIs, including noncentral F distribution CIs (noncentral F), percentile (Perc) bootstrap, and bias corrected and accelerated (BCa) bootstrap methods, for eta squared (η²), omega squared (ω²), and epsilon squared (ε²), which are effect sizes commonly used in ANOVA using a Monte Carlo simulation design. We manipulated and evaluated factors across four levels of effect size (0, 0.010, 0.059, 0.138), three levels of sample size (n = 5, 30, 100), and three outcome distributions (normal, positively skewed, uniform) in an OF-ANOVA involving k = 3 groups. The results showed that η² exhibited substantial positive bias, particularly in small samples and under the null effect, whereas ω² and ε² were less biased and showed better coverage as sample size and effect size increased. Perc bootstrap intervals were generally widest, especially in smaller samples, yielding more conservative but less precise interval estimates, while noncentral F and BCa produced comparatively narrower intervals. Coverage for all three CIs deteriorated under skewed distributions and small samples and was further affected by a high proportion of unusable intervals in some conditions. To facilitate transparency and replication, all R simulation code and analysis scripts are openly available via the Open Science Framework (OSF). In line with current recommendations for estimation‑based inference, these results provide empirical guidance for selecting, reporting, and interpreting CIs for ANOVA effect sizes under data conditions that researchers commonly encounter in applied work.",
+  "citation": "@article{CI-ANOVA2026, title={Investigating Confidence Intervals for Effect Sizes in One-Way ANOVA: A Comprehensive Analysis of Eta Squared, Omega Squared, and Epsilon Squared}, author={Kasuni Abeykoonge and Johnson Li}, journal={Department of Psychology, University of Manitoba}, year={2026}, url={https://maheeshiabeykoon.github.io/Investigating-Confidence-Intervals-for-Effect-Sizes-in-ANOVA/} }",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "mainEntity": {
+    "@type": "WebPage",
+    "@id": "https://maheeshiabeykoon.github.io/Investigating-Confidence-Intervals-for-Effect-Sizes-in-ANOVA/"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "one-way fixed-effect ANOVA"
+    },
+    {
+      "@type": "Thing",
+      "name": "confidence intervals for effect sizes"
+    }
+  ]
+}
+</script>
+
+<!-- Website/Organization Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Department of Psychology, University of Manitoba",
+  "url": "https://www.umanitoba.ca/arts/psychology",
+  "logo": "https://maheeshiabeykoon.github.io/Investigating-Confidence-Intervals-for-Effect-Sizes-in-ANOVA/static/images/favicon.ico",
+  "sameAs": [
+    "https://twitter.com/umanitoba",
+    "https://github.com/maheeshiabeykoon"
+  ]
+}
+</script>
 </head>
 <body>
 
